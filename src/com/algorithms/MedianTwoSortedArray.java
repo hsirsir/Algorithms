@@ -7,6 +7,34 @@ public class MedianTwoSortedArray {
     public static void main(String args[]){
 
     }
+    public int findTwoArrayMedian(int[] aarr,int astart,int aend,int[] barr,int bstart,int bend,int k){
+        int res = 0;
+        int m = aend - astart + 1;
+        int n = bend - bstart + 1;
+        if((m + n)%2 == 0){
+
+        }
+        return res;
+    }
+    public int findKth(int[] aarr,int astart,int aend,int[] barr,int bstart,int bend,int k){
+        int m = aend - astart + 1;
+        int n = bend - bstart + 1;
+        if(m > n){
+            return findKth(barr,bstart,bend,aarr,astart,aend,k);
+        }
+        if(k == 1){
+            return aarr[astart];
+        }
+        int partA = Math.min(k / 2,m);
+        int partB = k - partA;
+        if(aarr[astart + partA - 1] < barr[bstart + partB - 1]){
+            return findKth(aarr,astart + partA,aend,barr,bstart,bend,k - partA);
+        }else if(aarr[astart + partA - 1] == barr[bstart + partB - 1]){
+            return aarr[astart + partA - 1];
+        }else{
+            return  findKth(aarr,astart,aend,barr,bstart + partB,bend,k - partB);
+        }
+    }
     public static void getMedianNumber(int numbers1[],int numbers2[]){
         int len1 = numbers1.length;
         int len2 = numbers2.length;
