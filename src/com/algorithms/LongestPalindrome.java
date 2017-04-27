@@ -15,7 +15,7 @@ public class LongestPalindrome {
      */
     public String longestPalindrome(String s) {
         StringBuffer stringBuffer = new StringBuffer();
-
+        System.out.println("fdgd");
         return stringBuffer.toString();
     }
 
