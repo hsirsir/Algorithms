@@ -9,7 +9,7 @@ public class Main {
 	/*// write your code here
         String str1 = "";
         System.out.println(str1.length());*/
-        List<Integer> ls = new ArrayList<>();
+       /* List<Integer> ls = new ArrayList<>();
         ls.add(new Integer(1));
         ls.add(new Integer(3));
         ls.add(new Integer(6));
@@ -17,7 +17,10 @@ public class Main {
             System.out.println(true);
         }else{
             System.out.println(false);
-        }
+        }*/
+       int m = 1;
+       System.out.println(m << 3);
+       System.out.println(8 >> 3);
 
     }
 }
