@@ -7,7 +7,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-	/*// write your code here
+    /*// write your code here
         String str1 = "";
         System.out.println(str1.length());*/
        /* List<Integer> ls = new ArrayList<>();
@@ -22,14 +22,16 @@ public class Main {
       /* int m = 1;
        System.out.println(m << 3);
        System.out.println(8 >> 3);*/
-      String str1 = "abcd";
-      String str2 = "cadb";
-      byte[] b1 = str1.getBytes();
-      byte[] b2 = str2.getBytes();
-      System.out.println(b1 == b2);
-      Arrays.sort(b1);
-      Arrays.sort(b2);
-      System.out.println(b1 == b2);
+        String str1 = "abcd";
+        String str2 = "cadb";
+        byte[] b1 = str1.getBytes();
+        byte[] b2 = str2.getBytes();
+        System.out.println(str1.equals(str2));
+        Arrays.sort(b1);
+        Arrays.sort(b2);
+        String orderStr1 = new String(b1);
+        String orderStr2 = new String(b2);
+        System.out.println(orderStr1.equals(orderStr2));
 
     }
 }
