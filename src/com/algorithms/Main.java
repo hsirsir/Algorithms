@@ -1,6 +1,7 @@
 package com.algorithms;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -18,9 +19,17 @@ public class Main {
         }else{
             System.out.println(false);
         }*/
-       int m = 1;
+      /* int m = 1;
        System.out.println(m << 3);
-       System.out.println(8 >> 3);
+       System.out.println(8 >> 3);*/
+      String str1 = "abcd";
+      String str2 = "cadb";
+      byte[] b1 = str1.getBytes();
+      byte[] b2 = str2.getBytes();
+      System.out.println(b1 == b2);
+      Arrays.sort(b1);
+      Arrays.sort(b2);
+      System.out.println(b1 == b2);
 
     }
 }
