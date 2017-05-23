@@ -19,7 +19,6 @@ public class Server {
         try {
             ServerSocket serverSocket = new ServerSocket(9080);
             while(true){
-                System.out.println("wait client!!!!");
                 final Socket socket = serverSocket.accept();
                 new Thread(new Runnable() {
                     @Override

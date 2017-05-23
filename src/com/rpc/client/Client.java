@@ -17,7 +17,6 @@ public class Client {
         HelloService helloService = getProxy(HelloService.class,"127.0.0.1",9080);
         System.out.println(helloService.sayHello("6Estates"));
     }
-
     public static  <T> T getProxy(Class<T> interfaceClass,String host,int port){
         return (T) Proxy.newProxyInstance(interfaceClass.getClassLoader(), new Class<?>[]{interfaceClass}, new InvocationHandler() {
             @Override
