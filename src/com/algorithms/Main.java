@@ -68,11 +68,15 @@ public class Main {
         int tmpInt = (int)res;
         System.out.println(tmpInt);*/
        /* System.out.println((-0.0001d) > (-0.01d));*/
-       String path = "/";
+  /*     String path = "/";
        String[] pathList = path.split("/a");
        System.out.println(pathList.length);
        for(int i = 0;i < pathList.length;i++){
            System.out.println(pathList[i]);
-       }
+       }*/
+ /* System.out.println(System.getProperty("java.version"));*/
+//    System.out.println(Integer.toBinaryString(5));
+        String str1 = "abcd";
+        System.out.println(str1.substring(0,1));
     }
 }

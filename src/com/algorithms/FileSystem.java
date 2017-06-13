@@ -4,19 +4,6 @@ import java.util.*;
 
 public class FileSystem {
 
-    public static void main(String[] args){
-        /*
-        ["FileSystem","ls","mkdir","addContentToFile","ls","readContentFromFile"]
-        [[],["/"],["/a/b/c"],["/a/b/c/d","hello"],["/"],["/a/b/c/d"]]
-         */
-        //[null,[],null,null,["a"],"hello"]
-        FileSystem fileSystem = new FileSystem();
-        System.out.println(fileSystem.ls("/"));
-        fileSystem.mkdir("/a/b/c");
-        fileSystem.addContentToFile("/a/b/c/d","hello");
-
-
-    }
     FileObj rootFileSys;
     public FileSystem() {
         rootFileSys = new FileObj(1,null);
@@ -69,7 +56,7 @@ class FileObj{
      */
     public int fileType;
     public String content;
-    public HashMap<String,FileObj> files;
+    public TreeMap<String,FileObj> files;
     public List<String> paths;
     //public String allPathName;
     public FileObj(int ftype,String fcontent){
@@ -78,7 +65,7 @@ class FileObj{
             content = fcontent;
         }else{
             paths = new ArrayList<>();
-            files = new HashMap<>();
+            files = new TreeMap<>();
         }
     }
     public void addContent(String fileName, String con){
