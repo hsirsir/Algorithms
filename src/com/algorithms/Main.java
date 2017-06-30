@@ -76,7 +76,8 @@ public class Main {
        }*/
  /* System.out.println(System.getProperty("java.version"));*/
 //    System.out.println(Integer.toBinaryString(5));
-        String str1 = "abcd";
-        System.out.println(str1.substring(0,1));
+        String str1 = "1_blog_03e0d0700102xcw9";
+        byte[] strBytes = str1.getBytes();
+        System.out.println(strBytes);
     }
 }
